@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithmic Trading Academy </title>
+    <link rel="stylesheet" href="design.css">
+</head>
+    <body>
+        <hr>
+        <header>
+        <div>
+            <section>
+                <div>   
+                    <div class="header">
+                        <h1> Algorithmic Trading Academy</h1>
+                        <p>Your Complete Journey for being an Algo Trader</p>
+                    </div>
+
+                    <!-- Progress Tracker -->
+                    <div class="progress-tracker">
+                        <div class="progress-header">
+                            <div class="progress-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number" id="totalProgress">0%</div>
+                                    <div class="stat-label">Overall Progress</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" id="phasesCompleted">0/9</div>
+                                    <div class="stat-label">Phases Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" id="tutorialsCompleted">0/25</div>
+                                    <div class="stat-label">Tutorials Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" id="booksCompleted">0/20</div>
+                                    <div class="stat-label">Books Read</div>
+                                </div>
+                            </div>
+                            <button class="reset-progress" onclick="resetProgress()">Reset Progress</button>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progressBar" 
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-percentage" id="progressPercent">0%</div>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav-links">
+                            <li><a href="#roadmap">Roadmap</a></li>
+                            <li><a href="#tutorials">Expert Tutorials</a></li>
+                            <li><a href="#books">Essential Books</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#tools">Tools & Platforms</a></li>
+                            <li><a href="#communities">Communities</a></li>
+                            <li><a href="#datasets">Datasets</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="container">
+            <div id="milestoneAlert"></div>
+
+            <!-- Roadmap Section -->
+            <section id="roadmap" class="section">
+                <h2>📍 Complete Learning Roadmap</h2>
+                <p>Follow this structured path to master algorithmic trading. Total timeline: 17-27 months</p>
+
+                <div class="timeline">
+                    <div class="timeline-item" id="phase-1">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="1">
+                                    data-phase 1 completed
+                                </label>
+                            </div>
+                            <h3>Phase 1: Financial Markets Foundations (2-3 months)</h3>
+                            <p><strong>Goal:</strong> Understand how financial markets work</p>
+                            <div class="skills-grid">
+                                <div class="skill-item"> Market Structure & Mechanics</div>
+                                <div class="skill-item"> Technical Analysis Basics</div>
+                                <div class="skill-item"> Order Types & Execution</div>
+                                <div class="skill-item"> Risk Management Principles</div>
+                                <div class="skill-item"> Understanding Liquidity</div>
+                                <div class="skill-item"> Bid-Ask Spreads</div>
+                                <div class="skill-item"> Long vs Short Positions</div>
+                                <div class="skill-item"> Candlestick Patterns</div>
+                            </div>
+                            <p ><strong>Key Concepts to Master:</strong></p>
+                            <ul>
+                                <li>How exchanges work (NYSE, NASDAQ, CME)</li>
+                                <li>Market makers vs limit orders</li>
+                                <li>Support and resistance levels</li>
+                                <li>Volume analysis and its significance</li>
+                                <li>Moving averages (SMA, EMA, WMA)</li>
+                                <li>Relative Strength Index (RSI)</li>
+                                <li>MACD and Bollinger Bands</li>
+                                <li>Understanding market depth</li>
+                            </ul>
+                            <p><strong>Avoiding Common Pitfalls:</strong></p>
+                            <ul>
+                                <li>Overfitting (curve-fitting to historical data)</li>
+                                <li>Look-ahead bias (using future data)</li>
+                                <li>Survivorship bias (only using current assets)</li>
+                                <li>Data snooping (testing too many strategies)</li>
+                                <li>Ignoring transaction costs and slippage</li>
+                                <li>Not accounting for market impact</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-6">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                <input type="checkbox" onchange="updateProgress()" data-phase="6">
+                                data-phase 6 completed
+                                </label>
+                            </div>
+                            <h3>Phase 6: Build Your First Strategy (2-3 months)</h3>
+                            <p><strong>Goal:</strong> Create, backtest, and paper trade a complete system</p>
+                            <div class="skills-grid">
+                                <div class="skill-item"> Strategy Ideation</div>
+                                <div class="skill-item"> Code Implementation</div>
+                                <div class="skill-item"> Backtesting & Analysis</div>
+                                <div class="skill-item"> Parameter Optimization</div>
+                                <div class="skill-item"> Walk-Forward Analysis</div>
+                                <div class="skill-item"> Paper Trading</div>
+                                <div class="skill-item"> Performance Tracking</div>
+                                <div class="skill-item"> Strategy Refinement</div>
+                            </div>
+                            <p><strong>Step-by-Step Process:</strong></p>
+                            <ul>
+                                <li><strong>Step 1:</strong> Choose a simple strategy (e.g., SMA crossover)</li>
+                                <li><strong>Step 2:</strong> Download 5+ years of historical data</li>
+                                <li><strong>Step 3:</strong> Clean and prepare the data</li>
+                                <li><strong>Step 4:</strong> Implement entry and exit rules</li>
+                                <li><strong>Step 5:</strong> Add position sizing logic</li>
+                                <li><strong>Step 6:</strong> Include transaction costs (0.1-0.5%)</li>
+                                <li><strong>Step 7:</strong> Run initial backtest</li>
+                                <li><strong>Step 8:</strong> Analyze results and metrics</li>
+                                <li><strong>Step 9:</strong> Optimize parameters (avoid overfitting!)</li>
+                                <li><strong>Step 10:</strong> Walk-forward validation</li>
+                                <li><strong>Step 11:</strong> Connect to paper trading account</li>
+                                <li><strong>Step 12:</strong> Monitor for 1-3 months</li>
+                            </ul>
+                            <p><strong>Starter Project Ideas:</strong></p>
+                            <ul>
+                                <li>Simple Moving Average (50/200) crossover strategy</li>
+                                <li>RSI mean reversion (buy at 30, sell at 70)</li>
+                                <li>Bollinger Band squeeze breakout</li>
+                                <li>MACD divergence strategy</li>
+                                <li>Crypto momentum strategy</li>
+                                <li>Pairs trading with two correlated stocks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-7">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="7">
+                                    data-phase 7 completed
+                                </label>   
+                            </div>
+                            <h3>Phase 7: Advanced Topics (3-6 months)</h3>
+                            <p><strong>Goal:</strong> Machine learning and advanced techniques</p>
+                            <div class="skills-grid">
+                                <div class="skill-item"> Machine Learning Basics</div>
+                                <div class="skill-item"> Deep Learning (LSTM, Neural Nets)</div>
+                                <div class="skill-item"> Reinforcement Learning</div>
+                                <div class="skill-item"> Sentiment Analysis (NLP)</div>
+                                <div class="skill-item"> Alternative Data Sources</div>
+                                <div class="skill-item"> High-Frequency Trading Concepts</div>
+                                <div class="skill-item"> Feature Engineering</div>
+                                <div class="skill-item"> Model Validation</div>
+                            </div>
+                            <p><strong>Machine Learning for Trading:</strong></p>
+                            <ul>
+                                <li><strong>Supervised Learning:</strong>
+                                    <ul>
+                                        <li>Classification (up/down/sideways prediction)</li>
+                                        <li>Regression (price level prediction)</li>
+                                        <li>Random Forests for feature importance</li>
+                                        <li>Gradient Boosting (XGBoost, LightGBM)</li>
+                                        <li>Support Vector Machines (SVM)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Deep Learning:</strong>
+                                    <ul>
+                                        <li>Feedforward Neural Networks</li>
+                                        <li>LSTM (Long Short-Term Memory) for sequences</li>
+                                        <li>GRU (Gated Recurrent Units)</li>
+                                        <li>Convolutional Neural Networks for patterns</li>
+                                        <li>Transformer models for time series</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Reinforcement Learning:</strong>
+                                    <ul>
+                                        <li>Q-Learning for trading decisions</li>
+                                        <li>Deep Q-Networks (DQN)</li>
+                                        <li>Policy Gradient methods</li>
+                                        <li>Actor-Critic models</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p><strong>Alternative Data:</strong></p>
+                            <ul>
+                                <li>Social media sentiment (Twitter, Reddit, StockTwits)</li>
+                                <li>News sentiment analysis</li>
+                                <li>Google Trends data</li>
+                                <li>Satellite imagery (parking lots, shipping)</li>
+                                <li>Credit card transaction data</li>
+                                <li>App download statistics</li>
+                                <li>Web scraping (product prices, reviews)</li>
+                            </ul>
+                            <p><strong>NLP Techniques:</strong></p>
+                            <ul>
+                                <li>Sentiment analysis with VADER, TextBlob</li>
+                                <li>Named Entity Recognition (NER)</li>
+                                <li>Topic modeling (LDA, NMF)</li>
+                                <li>BERT and transformer models</li>
+                                <li>Financial news classification</li>
+                            </ul>
+                            <p><strong>High-Frequency Trading:</strong></p>
+                            <ul>
+                                <li>Market microstructure theory</li>
+                                <li>Order book dynamics</li>
+                                <li>Latency optimization techniques</li>
+                                <li>Co-location and proximity hosting</li>
+                                <li>FPGA and hardware acceleration</li>
+                                <li>Tick data analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-8">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="8">
+                                    data-phase 8 completed
+                                </label>
+                            </div>
+                            <h3>Phase 8: Production Deployment (2-3 months)</h3>
+                            <p><strong>Goal:</strong> Build production-ready systems</p>
+                            <div class="skills-grid">
+                                <div class="skill-item"> System Architecture Design</div>
+                                <div class="skill-item"> Cloud Deployment (AWS/GCP)</div>
+                                <div class="skill-item"> Docker Containerization</div>
+                                <div class="skill-item"> Risk Control Systems</div>
+                                <div class="skill-item"> Real-time Monitoring</div>
+                                <div class="skill-item"> Alert Systems</div>
+                                <div class="skill-item"> Database Management</div>
+                                <div class="skill-item"> Security & Authentication</div>
+                            </div>
+                            <p><strong>System Architecture Components:</strong></p>
+                            <ul>
+                                <li><strong>Data Pipeline:</strong>
+                                    <ul>
+                                        <li>Real-time data ingestion (WebSocket, REST API)</li>
+                                        <li>Data cleaning and normalization</li>
+                                        <li>Storage (PostgreSQL, MongoDB, Redis)</li>
+                                        <li>Data redundancy and backup</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Strategy Engine:</strong>
+                                    <ul>
+                                        <li>Signal generation logic</li>
+                                        <li>Position sizing calculations</li>
+                                        <li>Entry and exit triggers</li>
+                                        <li>Multi-strategy coordination</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Execution System:</strong>
+                                    <ul>
+                                        <li>Order management system (OMS)</li>
+                                        <li>Smart order routing</li>
+                                        <li>Slippage minimization</li>
+                                        <li>Order type selection</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Risk Management:</strong>
+                                    <ul>
+                                        <li>Real-time position tracking</li>
+                                        <li>Maximum position size limits</li>
+                                        <li>Daily loss limits (circuit breakers)</li>
+                                        <li>Correlation monitoring</li>
+                                        <li>Exposure calculations</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p><strong>Deployment Options:</strong></p>
+                            <ul>
+                                <li><strong>AWS:</strong> EC2, Lambda, RDS, S3, CloudWatch</li>
+                                <li><strong>Google Cloud:</strong> Compute Engine, Cloud Functions, BigQuery</li>
+                                <li><strong>DigitalOcean:</strong> Droplets, managed databases</li>
+                                <li><strong>Heroku:</strong> Easy deployment for simple bots</li>
+                                <li><strong>VPS:</strong> Dedicated servers (Linode, Vultr)</li>
+                            </ul>
+                            <p><strong>Monitoring & Alerts:</strong></p>
+                            <ul>
+                                <li>Real-time P&L tracking dashboard</li>
+                                <li>Email/SMS alerts for critical events</li>
+                                <li>Telegram/Discord bot notifications</li>
+                                <li>Error logging and debugging</li>
+                                <li>System health checks (heartbeat)</li>
+                                <li>Trade execution confirmations</li>
+                                <li>Strategy performance metrics</li>
+                            </ul>
+                            <p><strong>Disaster Recovery:</strong></p>
+                            <ul>
+                                <li>Automated backups (code, data, configs)</li>
+                                <li>Failover systems and redundancy</li>
+                                <li>Manual kill switch implementation</li>
+                                <li>Graceful shutdown procedures</li>
+                                <li>Connection loss handling</li>
+                                <li>API rate limit management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-9">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="9">
+                                    data-phase 9 completed
+                                </label>
+                            </div>
+                            <h3>Phase 9: Live Trading </h3>
+                            <p><strong>Goal:</strong> Execute and refine strategies with real capital</p>
+                            <div class="skills-grid">
+                                <div class="skill-item"> Start with Small Capital</div>
+                                <div class="skill-item"> Performance Monitoring</div>
+                                <div class="skill-item"> Continuous Improvement</div>
+                                <div class="skill-item"> Risk Management Discipline</div>
+                                <div class="skill-item"> Strategy Diversification</div>
+                                <div class="skill-item"> A/B Testing Strategies</div>
+                                <div class="skill-item"> Trade Journaling</div>
+                                <div class="skill-item"> Never Stop Learning</div>
+                            </div>
+                            <p><strong>Going Live Checklist:</strong></p>
+                            <ul>
+                                <li> Strategy backtested with realistic assumptions</li>
+                                <li> Walk-forward validation passed</li>
+                                <li> Paper trading successful for 3+ months</li>
+                                <li> Risk controls implemented and tested</li>
+                                <li> Monitoring and alert systems in place</li>
+                                <li> Emergency procedures documented</li>
+                                <li> Starting with 1-5% of total capital</li>
+                                <li> Psychological readiness for losses</li>
+                            </ul>
+                            <p><strong>Risk Management Rules:</strong></p>
+                            <ul>
+                                <li>Never risk more than 1-2% per trade</li>
+                                <li>Maximum portfolio exposure: 20-30%</li>
+                                <li>Daily loss limit: 5% of capital</li>
+                                <li>Monthly loss limit: 10% of capital</li>
+                                <li>Correlation limits between strategies</li>
+                                <li>Position size limits per asset</li>
+                                <li>Leverage limits (avoid excessive leverage)</li>
+                            </ul>
+                            <p><strong>Performance Review Schedule:</strong></p>
+                            <ul>
+                                <li><strong>Daily:</strong> Check open positions, P&L, alerts</li>
+                                <li><strong>Weekly:</strong> Review trade log, analyze winners/losers</li>
+                                <li><strong>Monthly:</strong> Full performance analysis, strategy comparison</li>
+                                <li><strong>Quarterly:</strong> Strategy optimization, portfolio rebalancing</li>
+                                <li><strong>Annually:</strong> Tax planning, major strategy overhaul</li>
+                            </ul>
+                            <p><strong>Common Pitfalls to Avoid:</strong></p>
+                            <ul>
+                                <li>Revenge trading after losses</li>
+                                <li>Increasing position size after wins (overconfidence)</li>
+                                <li>Not adapting to changing market conditions</li>
+                                <li>Ignoring warning signs (drawdowns, low Sharpe)</li>
+                                <li>Over-diversification (too many strategies)</li>
+                                <li>Under-diversification (single strategy risk)</li>
+                                <li>Emotional interference with system rules</li>
+                                <li>Not keeping proper records</li>
+                            </ul>
+                            <p><strong>Signs to Stop Trading a Strategy:</strong></p>
+                            <ul>
+                                <li>Drawdown exceeds historical maximum by 50%</li>
+                                <li>Sharpe ratio drops below 0.5 for 3+ months</li>
+                                <li>Win rate significantly lower than backtest</li>
+                                <li>Market conditions have fundamentally changed</li>
+                                <li>Better strategies identified and validated</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expert Tutorials Section -->
+            <section id="tutorials" class="section">
+                <h2> Expert Video Tutorials & Courses</h2>
+                <p>Learn from the best in the industry. All courses are taught by experienced professionals and researchers.</p>
+                
+                <h3> Beginner Level Courses</h3>
+                <ul class="tutorial-list">
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="1">
+                                tutorial 1completed
+                            </label>
+                        </div>
+                        <h4>Python for Algorithmic Trading </h4>
+                        <p class="instructor">By: Dr. Yves Hilpisch (Founder, The Python Quants | Author of "Python for Finance")</p>
+                        <p>Comprehensive introduction to Python programming specifically for trading applications. Covers NumPy, Pandas, and building your first trading bot from scratch.</p>
+                        <p><strong>What You'll Learn:</strong> Python basics, financial data structures, vectorization, API integration, basic strategies</p>
+                        <p><strong>Duration:</strong> 18 hours | <strong>Level:</strong> Beginner</p>
+                        <span class="badge badge-beginner">Beginner</span>
+                        <span class="badge badge-intermediate">Python/C#</span>
+                        <span class="badge badge-advanced">Cloud Platform</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Backtesting.py</h4>
+                        <p><strong>Language:</strong> Python</p>
+                        <p><strong>Type:</strong> Simple vectorized backtesting</p>
+                        <p><strong>Features:</strong> Lightweight, easy to learn, interactive charts, minimal dependencies</p>
+                        <p><strong>Best For:</strong> Beginners, quick strategy testing, learning</p>
+                        <p><strong>Installation:</strong> pip install backtesting</p>
+                        <span class="badge badge-beginner">Simple</span>
+                        <span class="badge badge-intermediate">Quick Setup</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>PyAlgoTrade</h4>
+                        <p><strong>Language:</strong> Python</p>
+                        <p><strong>Type:</strong> Event-driven backtesting</p>
+                        <p><strong>Features:</strong> Good documentation, Bitcoin support, Twitter integration, technical indicators</p>
+                        <p><strong>Best For:</strong> Beginners, educational purposes</p>
+                        <p><strong>Installation:</strong> pip install pyalgotrade</p>
+                        <span class="badge badge-beginner">Beginner Friendly</span>
+                        <span class="badge badge-intermediate">Educational</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>MetaTrader 5</h4>
+                        <p><strong>Language:</strong> MQL5</p>
+                        <p><strong>Type:</strong> Integrated platform</p>
+                        <p><strong>Features:</strong> Built-in backtesting, strategy tester, market access, automated execution</p>
+                        <p><strong>Best For:</strong> Forex and CFD trading</p>
+                        <span class="badge badge-beginner">MQL5</span>
+                        <span class="badge badge-intermediate">Forex/CFDs</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>TradingView Pine Script</h4>
+                        <p><strong>Language:</strong> Pine Script</p>
+                        <p><strong>Type:</strong> Cloud-based with visualization</p>
+                        <p><strong>Features:</strong> Excellent charting, built-in backtesting, easy to learn, large community</p>
+                        <p><strong>Best For:</strong> Visual strategy development, quick prototyping</p>
+                        <span class="badge badge-beginner">Pine Script</span>
+                        <span class="badge badge-beginner">Visual</span>
+                    </div>
+                </div>
+
+                <h3> Broker APIs for Live Trading</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Interactive Brokers (IBKR)</h4>
+                        <p><strong>Coverage:</strong> Stocks, options, futures, forex, bonds - global markets</p>
+                        <p><strong>API:</strong> TWS API (Python, Java, C++, C#), IB Gateway</p>
+                        <p><strong>Fees:</strong> Low commissions, market data fees apply</p>
+                        <p><strong>Best For:</strong> Professional traders, multi-asset, international markets</p>
+                        <p><strong>Min Deposit:</strong> $0 (IBKR Lite), $10K+ for margin</p>
+                        <span class="badge badge-intermediate">Global</span>
+                        <span class="badge badge-expert">Professional</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Alpaca</h4>
+                        <p><strong>Coverage:</strong> US stocks and ETFs, cryptocurrencies</p>
+                        <p><strong>API:</strong> REST and WebSocket, Python SDK available</p>
+                        <p><strong>Fees:</strong> Commission-free trading</p>
+                        <p><strong>Best For:</strong> Algo traders, API-first design, paper trading</p>
+                        <p><strong>Min Deposit:</strong> None for paper trading</p>
+                        <span class="badge badge-beginner">API-First</span>
+                        <span class="badge badge-intermediate">US Stocks</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>TD Ameritrade (thinkorswim)</h4>
+                        <p><strong>Coverage:</strong> US stocks, options, futures, forex</p>
+                        <p><strong>API:</strong> REST API, Python libraries available</p>
+                        <p><strong>Fees:</strong> $0 stock trades, $0.65 per options contract</p>
+                        <p><strong>Best For:</strong> US markets, good documentation, paper trading</p>
+                        <p><strong>Min Deposit:</strong> $0</p>
+                        <span class="badge badge-intermediate">US Markets</span>
+                        <span class="badge badge-advanced">Options Friendly</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>OANDA</h4>
+                        <p><strong>Coverage:</strong> Forex (50+ pairs), CFDs, precious metals</p>
+                        <p><strong>API:</strong> REST and streaming API, Python wrapper</p>
+                        <p><strong>Fees:</strong> Spread-based pricing</p>
+                        <p><strong>Best For:</strong> Forex algo trading, good API, reliable</p>
+                        <p><strong>Min Deposit:</strong> $0</p>
+                        <span class="badge badge-intermediate">Forex</span>
+                        <span class="badge badge-advanced">Reliable API</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Binance</h4>
+                        <p><strong>Coverage:</strong> 350+ cryptocurrencies, futures, margin trading</p>
+                        <p><strong>API:</strong> REST and WebSocket, Python library (python-binance)</p>
+                        <p><strong>Fees:</strong> 0.1% spot, discounts with BNB</p>
+                        <p><strong>Best For:</strong> Crypto trading, high liquidity, advanced features</p>
+                        <p><strong>Min Deposit:</strong> None</p>
+                        <span class="badge badge-intermediate">Crypto</span>
+                        <span class="badge badge-advanced">High Volume</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Coinbase Pro / Advanced Trade</h4>
+                        <p><strong>Coverage:</strong> Major cryptocurrencies, good liquidity</p>
+                        <p><strong>API:</strong> REST and WebSocket, comprehensive documentation</p>
+                        <p><strong>Fees:</strong> Maker/taker fees, volume discounts</p>
+                        <p><strong>Best For:</strong> US crypto traders, regulatory compliance</p>
+                        <p><strong>Min Deposit:</strong> None</p>
+                        <span class="badge badge-intermediate">Crypto</span>
+                        <span class="badge badge-beginner">US Compliant</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Kraken</h4>
+                        <p><strong>Coverage:</strong> Cryptocurrencies, futures, margin trading</p>
+                        <p><strong>API:</strong> REST and WebSocket APIs</p>
+                        <p><strong>Fees:</strong> Maker/taker fees, volume discounts</p>
+                        <p><strong>Best For:</strong> Crypto derivatives, spot and futures</p>
+                        <p><strong>Min Deposit:</strong> None</p>
+                        <span class="badge badge-intermediate">Crypto</span>
+                        <span class="badge badge-advanced">Derivatives</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>TradeStation</h4>
+                        <p><strong>Coverage:</strong> US stocks, options, futures</p>
+                        <p><strong>API:</strong> EasyLanguage, REST API</p>
+                        <p><strong>Fees:</strong> Various plans, commission-free options available</p>
+                        <p><strong>Best For:</strong> US traders, advanced platform</p>
+                        <p><strong>Min Deposit:</strong> $0</p>
+                        <span class="badge badge-intermediate">US Markets</span>
+                        <span class="badge badge-advanced">Professional</span>
+                    </div>
+                </div>
+
+                <h3> Development Tools & Libraries</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Jupyter Notebooks</h4>
+                        <p><strong>Purpose:</strong> Interactive Python environment for research and analysis</p>
+                        <p><strong>Features:</strong> Inline visualizations, markdown support, code cells, easy sharing</p>
+                        <p><strong>Best For:</strong> Strategy prototyping, data exploration, documentation</p>
+                        <p><strong>Installation:</strong> pip install jupyter</p>
+                        <span class="badge badge-beginner">Research Tool</span>
+                        <span class="badge badge-intermediate">Interactive</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>PyCharm / VS Code</h4>
+                        <p><strong>Purpose:</strong> Professional Python IDEs</p>
+                        <p><strong>Features:</strong> Debugging, code completion, version control, extensions, testing</p>
+                        <p><strong>Best For:</strong> Production code development, debugging, collaboration</p>
+                        <span class="badge badge-intermediate">IDE</span>
+                        <span class="badge badge-advanced">Professional Dev</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Git / GitHub</h4>
+                        <p><strong>Purpose:</strong> Version control and collaboration</p>
+                        <p><strong>Features:</strong> Track changes, branching, collaboration, code backup</p>
+                        <p><strong>Best For:</strong> Code management, team collaboration, portfolio building</p>
+                        <span class="badge badge-beginner">Essential</span>
+                        <span class="badge badge-intermediate">Version Control</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Docker</h4>
+                        <p><strong>Purpose:</strong> Containerization for consistent environments</p>
+                        <p><strong>Features:</strong> Portable deployments, isolated environments, easy scaling</p>
+                        <p><strong>Best For:</strong> Production deployment, cloud hosting, team development</p>
+                        <span class="badge badge-advanced">DevOps</span>
+                        <span class="badge badge-expert">Deployment</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>PostgreSQL / MongoDB</h4>
+                        <p><strong>Purpose:</strong> Database storage for market data and trades</p>
+                        <p><strong>Features:</strong> Reliable storage, fast queries, time-series support</p>
+                        <p><strong>Best For:</strong> Historical data storage, trade logging, analytics</p>
+                        <span class="badge badge-intermediate">Database</span>
+                        <span class="badge badge-advanced">Data Storage</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Redis</h4>
+                        <p><strong>Purpose:</strong> In-memory data structure store</p>
+                        <p><strong>Features:</strong> Ultra-fast, caching, pub/sub messaging, real-time data</p>
+                        <p><strong>Best For:</strong> Real-time data caching, session storage, message queuing</p>
+                        <span class="badge badge-advanced">Caching</span>
+                        <span class="badge badge-expert">Real-time</span>
+                    </div>
+                </div>
+
+                <h3> Essential Python Libraries</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>NumPy</h4>
+                        <p><strong>Purpose:</strong> Numerical computing with arrays</p>
+                        <p><strong>Use Cases:</strong> Fast calculations, linear algebra, array operations</p>
+                        <p><strong>Installation:</strong> pip install numpy</p>
+                        <span class="badge badge-beginner">Core Library</span>
+                        <span class="badge badge-intermediate">Essential</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Pandas</h4>
+                        <p><strong>Purpose:</strong> Data manipulation and analysis</p>
+                        <p><strong>Use Cases:</strong> DataFrames, time series, data cleaning, CSV handling</p>
+                        <p><strong>Installation:</strong> pip install pandas</p>
+                        <span class="badge badge-beginner">Core Library</span>
+                        <span class="badge badge-intermediate">Essential</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Matplotlib / Plotly</h4>
+                        <p><strong>Purpose:</strong> Data visualization</p>
+                        <p><strong>Use Cases:</strong> Charts, equity curves, performance analysis, dashboards</p>
+                        <p><strong>Installation:</strong> pip install matplotlib plotly</p>
+                        <span class="badge badge-beginner">Visualization</span>
+                        <span class="badge badge-intermediate">Charts</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>TA-Lib</h4>
+                        <p><strong>Purpose:</strong> Technical analysis indicators</p>
+                        <p><strong>Use Cases:</strong> 150+ indicators (RSI, MACD, Bollinger Bands, etc.)</p>
+                        <p><strong>Installation:</strong> pip install TA-Lib (requires binary)</p>
+                        <span class="badge badge-intermediate">Technical Analysis</span>
+                        <span class="badge badge-advanced">Indicators</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Scikit-learn</h4>
+                        <p><strong>Purpose:</strong> Machine learning</p>
+                        <p><strong>Use Cases:</strong> Classification, regression, clustering, model selection</p>
+                        <p><strong>Installation:</strong> pip install scikit-learn</p>
+                        <span class="badge badge-intermediate">ML</span>
+                        <span class="badge badge-advanced">Modeling</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>TensorFlow / PyTorch</h4>
+                        <p><strong>Purpose:</strong> Deep learning frameworks</p>
+                        <p><strong>Use Cases:</strong> Neural networks, LSTM, transformers, reinforcement learning</p>
+                        <p><strong>Installation:</strong> pip install tensorflow torch</p>
+                        <span class="badge badge-advanced">Deep Learning</span>
+                        <span class="badge badge-expert">Neural Nets</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>CCXT</h4>
+                        <p><strong>Purpose:</strong> Cryptocurrency exchange library</p>
+                        <p><strong>Use Cases:</strong> Unified API for 100+ crypto exchanges</p>
+                        <p><strong>Installation:</strong> pip install ccxt</p>
+                        <span class="badge badge-intermediate">Crypto</span>
+                        <span class="badge badge-advanced">Multi-Exchange</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Statsmodels</h4>
+                        <p><strong>Purpose:</strong> Statistical modeling</p>
+                        <p><strong>Use Cases:</strong> Time series analysis, regression, statistical tests</p>
+                        <p><strong>Installation:</strong> pip install statsmodels</p>
+                        <span class="badge badge-intermediate">Statistics</span>
+                        <span class="badge badge-advanced">Time Series</span>
+                    </div>
+                </div>
+
+                <h3> Cloud Platforms</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>AWS (Amazon Web Services)</h4>
+                        <p><strong>Services:</strong> EC2, Lambda, RDS, S3, CloudWatch</p>
+                        <p><strong>Best For:</strong> Scalable infrastructure, comprehensive services</p>
+                        <p><strong>Pricing:</strong> Pay-as-you-go, free tier available</p>
+                        <span class="badge badge-advanced">Cloud</span>
+                        <span class="badge badge-expert">Scalable</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Google Cloud Platform</h4>
+                        <p><strong>Services:</strong> Compute Engine, Cloud Functions, BigQuery</p>
+                        <p><strong>Best For:</strong> Data analytics, ML integration</p>
+                        <p><strong>Pricing:</strong> Pay-as-you-go, $300 free credit</p>
+                        <span class="badge badge-advanced">Cloud</span>
+                        <span class="badge badge-expert">ML Focus</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>DigitalOcean</h4>
+                        <p><strong>Services:</strong> Droplets (VPS), managed databases, spaces</p>
+                        <p><strong>Best For:</strong> Simple setup, affordable, good for beginners</p>
+                        <p><strong>Pricing:</strong> Starting $4/month</p>
+                        <span class="badge badge-intermediate">VPS</span>
+                        <span class="badge badge-beginner">Affordable</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Heroku</h4>
+                        <p><strong>Services:</strong> Container-based platform</p>
+                        <p><strong>Best For:</strong> Easy deployment, simple bots</p>
+                        <p><strong>Pricing:</strong> Free tier available (with limitations)</p>
+                        <span class="badge badge-beginner">Easy Deploy</span>
+                        <span class="badge badge-intermediate">Simple</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+
+                    <div class="resource-card">
+                        <h4>Twitter / X Finance Community</h4>
+                        <p><strong>Follow:</strong> @QuantConnect, @algotrading101, @pythonfortrading</p>
+                        <p><strong>Best For:</strong> News, insights, strategy ideas</p>
+                        <span class="badge badge-beginner">Social</span>
+                        <span class="badge badge-intermediate">Updates</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>LinkedIn Groups</h4>
+                        <p><strong>Groups:</strong> Algorithmic Trading, Quantitative Finance Professionals</p>
+                        <p><strong>Best For:</strong> Professional networking, job opportunities</p>
+                        <span class="badge badge-intermediate">Professional</span>
+                        <span class="badge badge-advanced">Networking</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Meetup Groups</h4>
+                        <p><strong>Search:</strong> "Algorithmic Trading", "FinTech", "Quantitative Finance"</p>
+                        <p><strong>Best For:</strong> Local networking, workshops, presentations</p>
+                        <span class="badge badge-intermediate">Local</span>
+                        <span class="badge badge-advanced">In-Person</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <div class="cta-box">
+                <h3> Ready to Start Your Journey?</h3>
+                <p>Begin with Phase 1: Financial Markets Foundations. Take it one step at a time, and remember - consistency beats intensity.</p>
+                <p>Join thousands of aspiring algo traders who are building their systematic trading systems. Track your progress as you complete each phase, tutorial, and book!</p>
+                <a href="#roadmap" class="cta-button">Start Learning Now</a>
+            </div>
+
+            <!-- Final Tips Section -->
+            <section class="section">
+                <h2>💡 Critical Success Tips</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <strong>✅ Start Simple</strong><br>
+                        Master basic strategies before attempting complex ML models. Simple often outperforms complex.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong>📝 Paper Trade Extensively</strong><br>
+                        Test every strategy for at least 3-6 months in paper trading before risking real capital.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong> Risk Management First</strong><br>
+                        Never risk more than 1-2% of capital per trade. Survival is more important than profits.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong> Avoid Over-Optimization</strong><br>
+                        Strategies that work perfectly on historical data often fail in live markets. Keep it robust.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong>📊 Document Everything</strong><br>
+                        Keep detailed logs of every decision, trade, and modification. Learn from your history.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong>📚 Stay Curious</strong><br>
+                        Markets evolve constantly. Continuous learning is not optional - it's mandatory.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong>🤝 Network & Collaborate</strong><br>
+                        Join communities, share knowledge, and learn from others' successes and failures.
+                    </div>
+                    
+                    <div class="skill-item">
+                        <strong>⏰ Be Patient</strong><br>
+                        Building profitable systems takes time. Most traders fail because they give up too soon.
+                    </div>
+
+                    <div class="skill-item">
+                        <strong>💰 Start with Small Capital</strong><br>
+                        Begin with 1-5% of your portfolio. Scale up only after consistent profitability.
+                    </div>
+
+                    <div class="skill-item">
+                        <strong>🔄 Backtest Rigorously</strong><br>
+                        Include transaction costs, slippage, and realistic assumptions. Walk-forward test everything.
+                    </div>
+
+                    <div class="skill-item">
+                        <strong>🎓 Learn from Failures</strong><br>
+                        Every losing trade is a lesson. Analyze what went wrong and adapt your system.
+                    </div>
+
+                    <div class="skill-item">
+                        <strong>🔒 Protect Your Capital</strong><br>
+                        Use stop losses, position sizing, and diversification. Capital preservation comes first.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p><strong> Algorithmic Trading Academy</strong></p>
+                <p>Your complete roadmap to systematic trading success</p>
+                <p><strong>Important Disclaimer:</strong> Trading involves substantial risk of loss. Never trade with money you can't afford to lose. Past performance does not guarantee future results.</p>
+                <p>This website is for educational purposes only. Always do your own research and consult with financial professionals.</p>
+            </div>
+        </div>
+        <hr>
+        
+            <hr>
+            <section>
+                <ul>
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="2">
+                                tutorial 2 completed
+                            </label>
+                        </div>
+                        <h4>Algorithmic Trading A-Z with Python</h4>
+                        <p class="instructor">By: The Lazy Programmer (Expert ML Engineer | 50+ courses created)</p>
+                        <p>Step-by-step course covering backtesting, technical indicators, and deploying strategies. Includes 10+ complete trading strategies with code.</p>
+                        <p><strong>What You'll Learn:</strong> Backtrader framework, technical indicators, strategy development, risk management, live trading setup</p>
+                        <p><strong>Duration:</strong> 22 hours | <strong>Level:</strong> Beginner to Intermediate</p>
+                        <span class="badge badge-beginner">Beginner</span>
+                        <span class="badge badge-intermediate">Hands-on</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="3">
+                                tutorial 3 completed
+                            </label>
+                        </div>
+                        <h4>Quantitative Finance & Algorithmic Trading in Python</h4>
+                        <p class="instructor">By: Holczer Balazs (Software Engineer & PhD in Computer Science)</p>
+                        <p>Mathematical foundations, portfolio theory, CAPM, and implementing trading algorithms from scratch. Focus on understanding the theory behind strategies.</p>
+                        <p><strong>What You'll Learn:</strong> Modern Portfolio Theory, CAPM, efficient frontier, Monte Carlo simulation, VaR calculations</p>
+                        <p><strong>Duration:</strong> 15 hours | <strong>Level:</strong> Beginner to Intermediate</p>
+                        <span class="badge badge-beginner">Theory + Practice</span>
+                        <span class="badge badge-intermediate">Mathematical</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="4">
+                                tutorial 4 completed
+                            </label>
+                        </div>
+                        <h4>Complete Guide to Building Trading Bots</h4>
+                        <p class="instructor">By: Part Time Larry (Popular Algo Trading YouTuber | 200K+ subscribers)</p>
+                        <p>Practical, beginner-friendly course focused on getting your first bot running quickly. Covers crypto and stock trading bots.</p>
+                        <p><strong>What You'll Learn:</strong> API integration, exchange connectivity, simple strategies, deployment, monitoring</p>
+                        <p><strong>Duration:</strong> 12 hours | <strong>Level:</strong> Beginner</p>
+                        <span class="badge badge-beginner">Practical</span>
+                        <span class="badge badge-intermediate">Crypto Focus</span>
+                    </li>
+                </ul>
+
+                <h3> Intermediate Level Courses</h3>
+                <ul class="tutorial-list">
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="5">
+                                tutorial 5 completed
+                            </label>
+                        </div>
+                        <h4>Advanced Algorithmic Trading (Quantopian Lectures)</h4>
+                        <p class="instructor">By: Dr. Thomas Starke & Quantopian Team (Former Hedge Fund Platform)</p>
+                        <p>Deep dive into factor models, alpha generation, risk management, and portfolio construction. Industry-standard techniques used by professional quants.</p>
+                        <p><strong>What You'll Learn:</strong> Factor analysis, alpha combination, Fama-French factors, risk models, portfolio optimization</p>
+                        <p><strong>Duration:</strong> 25+ lectures | <strong>Level:</strong> Intermediate to Advanced</p>
+                        <span class="badge badge-intermediate">Professional</span>
+                        <span class="badge badge-advanced">Factor Investing</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="6">
+                                tutorial 6 completed
+                            </label>
+                        </div>
+                        <h4>Machine Learning for Trading (Georgia Tech)</h4>
+                        <p class="instructor">By: Prof. Tucker Balch (Former VP at JP Morgan | Georgia Tech Professor)</p>
+                        <p>University-level course on ML applications in trading. Covers reinforcement learning, market simulation, and portfolio optimization. One of the best ML for trading courses available.</p>
+                        <p><strong>What You'll Learn:</strong> Q-learning, ensemble learners, technical indicators as features, market simulation, portfolio optimization</p>
+                        <p><strong>Duration:</strong> 40 hours (full semester) | <strong>Level:</strong> Intermediate to Advanced</p>
+                        <span class="badge badge-intermediate">University Course</span>
+                        <span class="badge badge-advanced">ML Focus</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="7">
+                                tutorial 7 completed
+                            </label>
+                        </div>
+                        <h4>Options Trading: Complete Options Volatility Course</h4>
+                        <p class="instructor">By: Karen Bruton (Professional Options Trader | 20+ years experience)</p>
+                        <p>Master options Greeks, volatility trading, and building algorithmic options strategies. From basics to advanced volatility arbitrage.</p>
+                        <p><strong>What You'll Learn:</strong> Black-Scholes, Greeks (delta, gamma, theta, vega), volatility surface, calendar spreads, iron condors</p>
+                        <p><strong>Duration:</strong> 20 hours | <strong>Level:</strong> Intermediate to Advanced</p>
+                        <span class="badge badge-intermediate">Options</span>
+                        <span class="badge badge-expert">Derivatives</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                            <input type="checkbox" onchange="updateProgress()" data-tutorial="8">
+                                tutorial 8 completed
+                            </label>
+                        </div>
+                        <h4>Backtesting Trading Strategies</h4>
+                        <p class="instructor">By: Dr. Ernest Chan (Quantitative Trader & Best-Selling Author)</p>
+                        <p>Learn proper backtesting methodology, avoiding overfitting, and statistical validation of strategies from one of the pioneers in retail algo trading.</p>
+                        <p><strong>What You'll Learn:</strong> Walk-forward analysis, Monte Carlo simulation, transaction cost modeling, survivorship bias, data snooping</p>
+                        <p><strong>Duration:</strong> 12 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">Methodology</span>
+                        <span class="badge badge-advanced">Critical</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                            <input type="checkbox" onchange="updateProgress()" data-tutorial="9">
+                                tutorial 9 completed
+                            </label>
+                        </div>
+                        <h4>Statistical Arbitrage Trading Strategies</h4>
+                        <p class="instructor">By: Pavel Kogut (Quantitative Researcher | Former Goldman Sachs)</p>
+                        <p>Cointegration, mean reversion models, and building market-neutral strategies. Focus on pairs trading and statistical arbitrage.</p>
+                        <p><strong>What You'll Learn:</strong> Cointegration testing, Johansen test, pairs selection, market-neutral portfolios, hedge ratios</p>
+                        <p><strong>Duration:</strong> 14 hours | <strong>Level:</strong> Intermediate to Advanced</p>
+                        <span class="badge badge-intermediate">Stat Arb</span>
+                        <span class="badge badge-advanced">Market Neutral</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="10">
+                                tutorial 10 cpmpleted
+                            </label>
+                        </div>
+                        <h4>Time Series Analysis for Finance</h4>
+                        <p class="instructor">By: Dr. Riccardo Rebonato (Professor of Finance | LSE)</p>
+                        <p>Advanced time series techniques for financial forecasting. ARIMA, GARCH, and state space models.</p>
+                        <p><strong>What You'll Learn:</strong> Stationarity, ADF test, ARIMA modeling, volatility forecasting with GARCH, Kalman filters</p>
+                        <p><strong>Duration:</strong> 16 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">Time Series</span>
+                        <span class="badge badge-advanced">Statistical</span>
+                    </li>
+                </ul>
+
+                <h3> Advanced Level Courses</h3>
+                <ul class="tutorial-list">
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="11">
+                                tutorial 11 completed
+                            </label>
+                        </div>
+                        <h4>High-Frequency Trading Strategies</h4>
+                        <p class="instructor">By: Irene Aldridge (Managing Partner, Able Alpha Trading | HFT Expert)</p>
+                        <p>Market microstructure, latency optimization, and building HFT systems. Covers C++ for trading and FPGA programming basics.</p>
+                        <p><strong>What You'll Learn:</strong> Order book dynamics, latency arbitrage, market making algorithms, co-location strategies, tick data analysis</p>
+                        <p><strong>Duration:</strong> 30 hours | <strong>Level:</strong> Advanced to Expert</p>
+                        <span class="badge badge-advanced">HFT</span>
+                        <span class="badge badge-expert">Professional</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="12">
+                                tutorial 12 completed
+                            </label>
+                        </div>
+                        <h4>Deep Learning for Time Series Forecasting</h4>
+                        <p class="instructor">By: Dr. Jason Brownlee (Machine Learning Mastery | 100+ books published)</p>
+                        <p>LSTM, GRU, and transformer models for financial time series. Practical implementations with TensorFlow and PyTorch.</p>
+                        <p><strong>What You'll Learn:</strong> LSTM architecture, sequence-to-sequence models, attention mechanisms, transformers for finance, multi-step forecasting</p>
+                        <p><strong>Duration:</strong> 18 hours | <strong>Level:</strong> Advanced</p>
+                        <span class="badge badge-advanced">Deep Learning</span>
+                        <span class="badge badge-expert">Neural Networks</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="13">
+                                tutorial 13 completed
+                            </label>
+                        </div>
+                        <h4>Advances in Financial Machine Learning</h4>
+                        <p class="instructor">By: Dr. Marcos López de Prado (Cornell University | Former Global Head of ML at AQR)</p>
+                        <p>Based on his groundbreaking book. Covers meta-labeling, feature importance, and financial ML best practices. Research-level content.</p>
+                        <p><strong>What You'll Learn:</strong> Triple-barrier method, fractional differentiation, purged cross-validation, feature importance, ensemble methods</p>
+                        <p><strong>Duration:</strong> 15 lectures | <strong>Level:</strong> Expert</p>
+                        <span class="badge badge-expert">Research Level</span>
+                        <span class="badge badge-advanced">Cutting Edge</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="14">
+                                tutorial 14 completed
+                            </label>
+                        </div>
+                        <h4>Portfolio Optimization & Risk Management</h4>
+                        <p class="instructor">By: Dr. Attilio Meucci (Former Head of Risk at KKR | NYU Professor)</p>
+                        <p>Advanced portfolio construction, risk budgeting, and CVaR optimization. Industry-standard techniques for institutional trading.</p>
+                        <p><strong>What You'll Learn:</strong> Mean-variance optimization, Black-Litterman model, risk parity, CVaR optimization, robust portfolio construction</p>
+                        <p><strong>Duration:</strong> 20 hours | <strong>Level:</strong> Advanced</p>
+                        <span class="badge badge-advanced">Portfolio Theory</span>
+                        <span class="badge badge-expert">Institutional</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="15">
+                                tutorial 15 completed
+                            </label>
+                        </div>
+                        <h4>Reinforcement Learning for Trading</h4>
+                        <p class="instructor">By: Dr. Xiao-Yang Liu (Columbia University | AI in Finance Researcher)</p>
+                        <p>Deep reinforcement learning algorithms specifically designed for trading. Implementation of DQN, A3C, and PPO for portfolio management.</p>
+                        <p><strong>What You'll Learn:</strong> Markov Decision Processes, Q-learning, Deep Q-Networks, policy gradients, actor-critic methods, multi-agent systems</p>
+                        <p><strong>Duration:</strong> 25 hours | <strong>Level:</strong> Advanced to Expert</p>
+                        <span class="badge badge-advanced">RL</span>
+                        <span class="badge badge-expert">Cutting Edge</span>
+                    </li>
+                </ul>
+
+                <h3> Specialized Topics</h3>
+                <ul class="tutorial-list">
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="16">
+                                tutorial 16 completed
+                            </label>
+                        </div>
+                        <h4>Cryptocurrency Algorithmic Trading</h4>
+                        <p class="instructor">By: Nicholas Stein (Crypto Trader & Developer | 5+ years in crypto)</p>
+                        <p>Building crypto trading bots, arbitrage strategies, and working with exchange APIs (Binance, Coinbase, Kraken). DeFi trading strategies.</p>
+                        <p><strong>What You'll Learn:</strong> Exchange API integration, crypto arbitrage, market making, MEV strategies, DeFi yield farming automation</p>
+                        <p><strong>Duration:</strong> 16 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">Crypto</span>
+                        <span class="badge badge-advanced">DeFi</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="17">
+                                tutorial 17 completed
+                            </label>
+                        </div>
+                        <h4>Sentiment Analysis for Trading</h4>
+                        <p class="instructor">By: Jose Portilla (Head of Data Science, Pierian Training | 1M+ students)</p>
+                        <p>NLP techniques, Twitter sentiment, news analysis, and incorporating alternative data into trading models.</p>
+                        <p><strong>What You'll Learn:</strong> VADER sentiment, TextBlob, BERT for finance, Twitter API, news scraping, sentiment-based strategies</p>
+                        <p><strong>Duration:</strong> 10 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">NLP</span>
+                        <span class="badge badge-advanced">Alternative Data</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="18">
+                                tutorial 18 completed
+                            </label>
+                        </div>
+                        <h4>Building Trading Infrastructure with AWS</h4>
+                        <p class="instructor">By: Stefan Jansen (Founder, Applied AI | Author of ML for Algorithmic Trading)</p>
+                        <p>Cloud deployment, scalable architectures, real-time data pipelines, and production trading systems on AWS.</p>
+                        <p><strong>What You'll Learn:</strong> EC2 instances, Lambda functions, RDS databases, S3 storage, CloudWatch monitoring, auto-scaling</p>
+                        <p><strong>Duration:</strong> 12 hours | <strong>Level:</strong> Advanced</p>
+                        <span class="badge badge-advanced">Cloud</span>
+                        <span class="badge badge-intermediate">DevOps</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="19">
+                                tutorial 19 completed
+                            </label>
+                        </div>
+                        <h4>Forex Algorithmic Trading Masterclass</h4>
+                        <p class="instructor">By: Kirill Eremenko (Data Scientist | SuperDataScience founder)</p>
+                        <p>Complete guide to forex algo trading. Currency pair selection, macro factors, carry trade strategies, and automated execution.</p>
+                        <p><strong>What You'll Learn:</strong> Forex fundamentals, currency correlations, interest rate differentials, carry trades, automated forex bots</p>
+                        <p><strong>Duration:</strong> 18 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">Forex</span>
+                        <span class="badge badge-advanced">Currencies</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="20">
+                                tutorial 20 completed
+                            </label>
+                        </div>
+                        <h4>Options Market Making Algorithms</h4>
+                        <p class="instructor">By: Dr. Andrew Papanicolaou (NYU Professor | Former Jump Trading)</p>
+                        <p>Advanced options market making, volatility arbitrage, and delta hedging algorithms. Professional-level content.</p>
+                        <p><strong>What You'll Learn:</strong> Market making theory, inventory risk, adverse selection, volatility surface modeling, Greeks hedging</p>
+                        <p><strong>Duration:</strong> 15 hours | <strong>Level:</strong> Expert</p>
+                        <span class="badge badge-expert">Market Making</span>
+                        <span class="badge badge-advanced">Options</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="21">
+                                tutorial 21 completed
+                            </label>
+                        </div>
+                        <h4>Quantitative Trading with R</h4>
+                        <p class="instructor">By: Dr. Ilya Kipnis (Independent Quant Trader | R expert)</p>
+                        <p>Using R for quantitative trading. Quantmod, PerformanceAnalytics, and building strategies in R.</p>
+                        <p><strong>What You'll Learn:</strong> R for finance, Quantmod library, backtesting in R, statistical analysis, portfolio optimization in R</p>
+                        <p><strong>Duration:</strong> 14 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">R Programming</span>
+                        <span class="badge badge-advanced">Statistical</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="22">
+                                tutorial 22 completed
+                            </label>
+                        </div>
+                        <h4>Event-Driven Trading Strategies</h4>
+                        <p class="instructor">By: Michael Halls-Moore (QuantStart founder | Former hedge fund quant)</p>
+                        <p>Trading around earnings, economic releases, and corporate events. News-based trading and event study methodology.</p>
+                        <p><strong>What You'll Learn:</strong> Earnings surprises, economic calendar trading, merger arbitrage, event study analysis, news parsing</p>
+                        <p><strong>Duration:</strong> 11 hours | <strong>Level:</strong> Intermediate</p>
+                        <span class="badge badge-intermediate">Event Trading</span>
+                        <span class="badge badge-advanced">Fundamental</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="23">
+                                tutorial 23 completed
+                            </label>
+                        </div>
+                        <h4>Multi-Asset Trading Strategies</h4>
+                        <p class="instructor">By: Dr. David Aronson (Evidence-Based Technical Analysis author)</p>
+                        <p>Cross-asset trading, inter-market analysis, and building strategies that span stocks, bonds, commodities, and currencies.</p>
+                        <p><strong>What You'll Learn:</strong> Asset correlations, risk-on/risk-off regimes, cross-asset momentum, global macro strategies</p>
+                        <p><strong>Duration:</strong> 13 hours | <strong>Level:</strong> Advanced</p>
+                        <span class="badge badge-advanced">Multi-Asset</span>
+                        <span class="badge badge-expert">Global Macro</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="24">
+                                tutorial 24 completed
+                            </label>
+                        </div>
+                        <h4>Futures Trading Algorithms</h4>
+                        <p class="instructor">By: Kevin Davey (World Cup Trading Champion | Algo trader)</p>
+                        <p>Systematic futures trading strategies. From strategy development to live execution on futures markets.</p>
+                        <p><strong>What You'll Learn:</strong> Futures fundamentals, contango/backwardation, roll optimization, spread trading, systematic futures strategies</p>
+                        <p><strong>Duration:</strong> 17 hours | <strong>Level:</strong> Intermediate to Advanced</p>
+                        <span class="badge badge-intermediate">Futures</span>
+                        <span class="badge badge-advanced">Commodities</span>
+                    </li>
+
+                    <li class="tutorial-item">
+                        <div class="tutorial-checkbox">
+                            <label>
+                                <input type="checkbox" onchange="updateProgress()" data-tutorial="25">
+                                tutorial 25 completed
+                            </label>
+                        </div>
+                        <h4>Building a Systematic Hedge Fund</h4>
+                        <p class="instructor">By: Robert Carver (Former Man AHL Portfolio Manager | Author)</p>
+                        <p>Everything needed to run a systematic trading business. From strategy development to risk management to operations.</p>
+                        <p><strong>What You'll Learn:</strong> Multi-strategy portfolios, risk budgeting, performance attribution, business operations, regulatory compliance</p>
+                        <p><strong>Duration:</strong> 25 hours | <strong>Level:</strong> Expert</p>
+                        <span class="badge badge-expert">Professional</span>
+                        <span class="badge badge-advanced">Business</span>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Books Section -->
+            <section id="books" class="section">
+                <h2> Essential Books </h2>
+                <p>These books are comprehensive, detailed resources that will take you from beginner to expert. Each book is 200+ pages of in-depth content.</p>
+                
+                <h3> Foundational Books </h3>
+                
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="1">
+                            book 1 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>1. Algorithmic Trading: Winning Strategies and Their Rationale</h4>
+                        <p class="author">By Ernest P. Chan (2013)</p>
+                        <p><strong>Why Essential:</strong> The definitive starting point for algo trading. Chan breaks down complex strategies into understandable components with real Python code examples. Written by a practitioner for practitioners.</p>
+                        <p><strong>What You'll Learn:</strong> Mean reversion strategies (pairs trading, ETF arbitrage), momentum strategies (time series, cross-sectional), risk management techniques, proper backtesting methodology, common pitfalls and how to avoid them.</p>
+                        <p><strong>Key Topics:</strong> Cointegration, Kalman filters, Kelly criterion, machine learning for trading, high-frequency strategies</p>
+                        <p><strong>Pages:</strong> 224 | <strong>Best For:</strong> Beginners to Intermediate | <strong>Difficulty:</strong> ⭐⭐</p>
+                        <span class="badge badge-beginner">Beginner Friendly</span>
+                        <span class="badge badge-intermediate">Code Examples</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="2">
+                            book 2 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>2. Quantitative Trading: How to Build Your Own Algorithmic Trading Business</h4>
+                        <p class="author">By Ernest P. Chan (2008)</p>
+                        <p><strong>Why Essential:</strong> Focuses on the business side of algo trading. Perfect for individual traders wanting to know how to research, develop, and execute strategies independently.</p>
+                        <p><strong>What You'll Learn:</strong> Setting up your trading business, finding and evaluating data sources, complete strategy development process (idea → backtest → live), position sizing and leverage, Kelly criterion application, psychology of trading.</p>
+                        <p><strong>Key Topics:</strong> Data sources, backtesting platforms, brokerage selection, transaction costs, risk management, scaling strategies</p>
+                        <p><strong>Pages:</strong> 216 | <strong>Best For:</strong> Beginners | <strong>Difficulty:</strong> ⭐⭐</p>
+                        <span class="badge badge-beginner">Business Focus</span>
+                        <span class="badge badge-intermediate">Practical Guide</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="3">
+                            book 3 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>3. Python for Finance: Mastering Data-Driven Finance (2nd Edition)</h4>
+                        <p class="author">By Yves Hilpisch (2018)</p>
+                        <p><strong>Why Essential:</strong> The most comprehensive guide to Python for financial applications. Over 700 pages covering everything from basics to advanced topics. Industry standard reference.</p>
+                        <p><strong>What You'll Learn:</strong> Python fundamentals, NumPy and Pandas mastery, financial data structures and operations, algorithmic trading strategies, derivatives analytics, risk management, portfolio optimization, machine learning for finance.</p>
+                        <p><strong>Key Topics:</strong> Time series analysis, Monte Carlo simulation, Black-Scholes, Greeks calculation, performance optimization, visualization</p>
+                        <p><strong>Pages:</strong> 700+ | <strong>Best For:</strong> All Levels | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-beginner">Comprehensive</span>
+                        <span class="badge badge-advanced">Technical Reference</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="4">
+                            book 4 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>4. Inside the Black Box: A Simple Guide to Quantitative and High Frequency Trading (2nd Edition)</h4>
+                        <p class="author">By Rishi K. Narang (2013)</p>
+                        <p><strong>Why Essential:</strong> Demystifies quantitative trading. Great overview of how professional quant funds operate. Accessible to beginners while covering sophisticated topics.</p>
+                        <p><strong>What You'll Learn:</strong> Alpha models (theory-driven vs data-driven), risk models, transaction cost models, portfolio construction methods, execution algorithms, how quant funds work internally.</p>
+                        <p><strong>Key Topics:</strong> Factor models, statistical arbitrage, market making, risk management frameworks, performance measurement</p>
+                        <p><strong>Pages:</strong> 352 | <strong>Best For:</strong> Beginner to Intermediate | <strong>Difficulty:</strong> ⭐⭐</p>
+                        <span class="badge badge-beginner">Great Overview</span>
+                        <span class="badge badge-intermediate">Accessible</span>
+                    </div>
+                </div>
+
+                <h3> Advanced Strategy & Theory</h3>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="5">
+                            book 5 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>5. Advances in Financial Machine Learning</h4>
+                        <p class="author">By Marcos López de Prado (2018)</p>
+                        <p><strong>Why Essential:</strong> Revolutionary approach to ML in finance. Written by a top quantitative researcher at a major hedge fund. Addresses real problems practitioners face. Game-changing content.</p>
+                        <p><strong>What You'll Learn:</strong> Financial data structures (tick bars, volume bars, dollar bars), labeling techniques (triple-barrier method), meta-labeling, sample weights, feature importance under substitution effects, backtesting with combinatorial purged cross-validation, portfolio construction via hierarchical risk parity.</p>
+                        <p><strong>Key Topics:</strong> Fractional differentiation, entropy features, microstructural features, bet sizing, backtest overfitting, multi-product strategy design</p>
+                        <p><strong>Pages:</strong> 400 | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Cutting-Edge</span>
+                        <span class="badge badge-expert">Research-Level</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="6">
+                            book 6 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>6. Machine Learning for Algorithmic Trading (2nd Edition)</h4>
+                        <p class="author">By Stefan Jansen (2020)</p>
+                        <p><strong>Why Essential:</strong> 820 pages covering ML, deep learning, and alternative data for trading. Extremely detailed with extensive Python code. Covers latest techniques and technologies.</p>
+                        <p><strong>What You'll Learn:</strong> Feature engineering for trading, supervised learning (linear models, tree-based, ensemble methods), NLP for trading (sentiment analysis, topic modeling), deep learning (CNNs, RNNs, autoencoders), reinforcement learning for portfolio management, alternative data sources, building production ML pipelines.</p>
+                        <p><strong>Key Topics:</strong> Alpha factor research, backtesting ML strategies, Zipline integration, Alphalens, PyFolio, model interpretation</p>
+                        <p><strong>Pages:</strong> 820 | <strong>Best For:</strong> Intermediate to Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">ML Focus</span>
+                        <span class="badge badge-expert">Comprehensive</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="7">
+                            book 7 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>7. Quantitative Momentum: A Practitioner's Guide to Building a Momentum-Based Stock Selection System</h4>
+                        <p class="author">By Wesley R. Gray & Jack R. Vogel (2016)</p>
+                        <p><strong>Why Essential:</strong> Deep dive into momentum strategies backed by academic research. Practical implementation details from practitioners who run real money.</p>
+                        <p><strong>What You'll Learn:</strong> Momentum theory and academic foundations, factor construction methodology, time-series vs cross-sectional momentum, momentum crashes and how to avoid them, building robust momentum systems, combining value and momentum.</p>
+                        <p><strong>Key Topics:</strong> 12-month momentum, seasonality effects, risk management for momentum, portfolio construction, backtesting results</p>
+                        <p><strong>Pages:</strong> 200 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Strategy Focus</span>
+                        <span class="badge badge-advanced">Research-Based</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="8">
+                            book 8 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>8. Systematic Trading: A Unique New Method for Designing Trading and Investing Systems</h4>
+                        <p class="author">By Robert Carver (2015)</p>
+                        <p><strong>Why Essential:</strong> Practical guide from a former hedge fund manager at Man AHL. Focus on building robust, diversified systematic strategies. Honest about what works and what doesn't.</p>
+                        <p><strong>What You'll Learn:</strong> Position sizing and forecast scaling, portfolio optimization for traders, combining multiple trading rules, risk management frameworks, handling costs and slippage, system design philosophy.</p>
+                        <p><strong>Key Topics:</strong> Trading rules, forecasting, volatility targeting, instrument diversification, strategy combinations, bootstrapping</p>
+                        <p><strong>Pages:</strong> 288 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Practical</span>
+                        <span class="badge badge-advanced">System Design</span>
+                    </div>
+                </div>
+
+                <h3> Market Microstructure & High-Frequency Trading</h3>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="9">
+                            book 9 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>9. Trading and Exchanges: Market Microstructure for Practitioners</h4>
+                        <p class="author">By Larry Harris (2003)</p>
+                        <p><strong>Why Essential:</strong> The definitive guide to how markets actually work. 650+ pages of comprehensive market structure knowledge. Must-read for understanding market mechanics.</p>
+                        <p><strong>What You'll Learn:</strong> Order types and their uses, market design and regulation, liquidity provision and consumption, price formation process, transaction costs analysis, market manipulation detection, trading strategies based on microstructure.</p>
+                        <p><strong>Key Topics:</strong> Bid-ask spreads, market impact, information asymmetry, dealer markets vs auction markets, dark pools, HFT</p>
+                        <p><strong>Pages:</strong> 650 | <strong>Best For:</strong> All Levels | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Market Structure</span>
+                        <span class="badge badge-expert">Comprehensive Reference</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="10">
+                            book102 completed
+                        </label>
+                    </div>                
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>10. Algorithmic and High-Frequency Trading</h4>
+                        <p class="author">By Álvaro Cartea, Sebastian Jaimungal, José Penalva (2015)</p>
+                        <p><strong>Why Essential:</strong> Mathematical treatment of HFT. Covers market making, optimal execution, and statistical arbitrage with rigorous mathematical foundations.</p>
+                        <p><strong>What You'll Learn:</strong> Stochastic optimal control for trading, order book dynamics modeling, market impact models, optimal market making strategies, optimal execution (Almgren-Chriss), statistical arbitrage theory.</p>
+                        <p><strong>Key Topics:</strong> Limit order books, price impact, adverse selection, inventory risk, latency arbitrage, microstructure noise</p>
+                        <p><strong>Pages:</strong> 360 | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Mathematical</span>
+                        <span class="badge badge-expert">HFT Focus</span>
+                    </div>
+                </div>
+
+                <h3> Risk Management & Portfolio Theory</h3>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="11">
+                            book 11 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>11. The Evaluation and Optimization of Trading Strategies (2nd Edition)</h4>
+                        <p class="author">By Robert Pardo (2008)</p>
+                        <p><strong>Why Essential:</strong> Comprehensive guide to proper strategy evaluation, avoiding curve-fitting, and proper backtesting methodology. Teaches how to objectively evaluate strategies.</p>
+                        <p><strong>What You'll Learn:</strong> Walk-forward analysis methodology, Monte Carlo simulation for strategy testing, genetic algorithms for optimization, statistical validation techniques, performance metrics, robustness testing.</p>
+                        <p><strong>Key Topics:</strong> Overfitting detection, out-of-sample testing, parameter sensitivity analysis, strategy robustness, objective functions</p>
+                        <p><strong>Pages:</strong> 368 | <strong>Best For:</strong> Intermediate to Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Backtesting</span>
+                        <span class="badge badge-advanced">Rigorous Methodology</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="12">
+                            book 12 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>12. Active Portfolio Management: A Quantitative Approach for Producing Superior Returns (2nd Edition)</h4>
+                        <p class="author">By Richard C. Grinold & Ronald N. Kahn (1999)</p>
+                        <p><strong>Why Essential:</strong> The industry standard for quantitative portfolio management. Used by professional fund managers worldwide. Covers the theoretical foundations of active management.</p>
+                        <p><strong>What You'll Learn:</strong> Information ratio maximization, fundamental law of active management, alpha generation techniques, portfolio construction with constraints, risk model building, performance attribution, transaction cost analysis.</p>
+                        <p><strong>Key Topics:</strong> Alpha forecasting, covariance matrices, optimization, factor models, Bayesian methods, implementation</p>
+                        <p><strong>Pages:</strong> 550 | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Portfolio Theory</span>
+                        <span class="badge badge-expert">Professional Standard</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="13">
+                            book 13 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>13. Quantitative Risk Management: Concepts, Techniques and Tools</h4>
+                        <p class="author">By Alexander J. McNeil, Rüdiger Frey, Paul Embrechts (2015)</p>
+                        <p><strong>Why Essential:</strong> Comprehensive treatment of risk management. 600+ pages covering all aspects of quantitative risk. Essential for anyone trading with leverage or managing portfolios.</p>
+                        <p><strong>What You'll Learn:</strong> Value at Risk (VaR) and Expected Shortfall (CVaR), copulas and dependence modeling, extreme value theory, credit risk modeling, operational risk, risk aggregation, stress testing.</p>
+                        <p><strong>Key Topics:</strong> Risk measures, multivariate models, tail risk, backtesting VaR, scenario analysis, Basel regulations</p>
+                        <p><strong>Pages:</strong> 600+ | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Risk Management</span>
+                        <span class="badge badge-expert">Mathematical</span>
+                    </div>
+                </div>
+
+                <h3> Specialized Topics</h3>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="14">
+                            book 14 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>14. Evidence-Based Technical Analysis: Applying the Scientific Method and Statistical Inference to Trading Signals</h4>
+                        <p class="author">By David Aronson (2006)</p>
+                        <p><strong>Why Essential:</strong> Critical thinking about technical analysis. Teaches how to properly test technical indicators using scientific methodology. Exposes common misconceptions.</p>
+                        <p><strong>What You'll Learn:</strong> Statistical hypothesis testing for trading rules, data mining bias and how to avoid it, proper evaluation of technical patterns, bootstrap methods, objective analysis of indicators, cognitive biases in trading.</p>
+                        <p><strong>Key Topics:</strong> False discoveries, multiple testing problem, chart pattern testing, indicator optimization, scientific method application</p>
+                        <p><strong>Pages:</strong> 568 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Critical Thinking</span>
+                        <span class="badge badge-advanced">Scientific Method</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="15">
+                            book 15 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>15. Option Volatility and Pricing: Advanced Trading Strategies and Techniques (2nd Edition)</h4>
+                        <p class="author">By Sheldon Natenberg (1994)</p>
+                        <p><strong>Why Essential:</strong> The bible of options trading. 500+ pages covering everything about options pricing and volatility. Used by professional options traders worldwide.</p>
+                        <p><strong>What You'll Learn:</strong> Options pricing models (Black-Scholes, binomial), all Greeks in depth (delta, gamma, theta, vega, rho), volatility analysis (historical vs implied), options trading strategies, risk management for options, volatility trading techniques.</p>
+                        <p><strong>Key Topics:</strong> Volatility smiles and skews, position Greeks, spreads (vertical, calendar, diagonal), volatility arbitrage, hedging</p>
+                        <p><strong>Pages:</strong> 506 | <strong>Best For:</strong> Intermediate to Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Options Focus</span>
+                        <span class="badge badge-expert">Comprehensive</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="16">
+                            book 16 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>16. Dynamic Hedging: Managing Vanilla and Exotic Options</h4>
+                        <p class="author">By Nassim Nicholas Taleb (1996)</p>
+                        <p><strong>Why Essential:</strong> Advanced options trading from a professional derivatives trader. Focuses on practical risk management. Written by the author of "The Black Swan."</p>
+                        <p><strong>What You'll Learn:</strong> Gamma scalping strategies, volatility trading in practice, exotic options pricing and hedging, real-world hedging strategies, dealing with model risk, understanding volatility surfaces.</p>
+                        <p><strong>Key Topics:</strong> Dynamic delta hedging, vega trading, barrier options, Asian options, volatility smile dynamics, crash hedging</p>
+                        <p><strong>Pages:</strong> 506 | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Professional Level</span>
+                        <span class="badge badge-expert">Derivatives</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="17">
+                            book 17 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>17. Quantitative Value: A Practitioner's Guide to Automating Intelligent Investment</h4>
+                        <p class="author">By Wesley R. Gray & Tobias E. Carlisle (2012)</p>
+                        <p><strong>Why Essential:</strong> Systematic value investing backed by research. Shows how to quantify and automate value strategies. Combines academic rigor with practical implementation.</p>
+                        <p><strong>What You'll Learn:</strong> Quality metrics for stock selection, earnings quality analysis, financial statement analysis for algorithms, value factor construction, combining value and quality, avoiding value traps.</p>
+                        <p><strong>Key Topics:</strong> Altman Z-Score, Piotroski F-Score, Beneish M-Score, ROIC, enterprise value multiples, margin of safety</p>
+                        <p><strong>Pages:</strong> 267 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Value Investing</span>
+                        <span class="badge badge-advanced">Fundamental Analysis</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="18">
+                            book 18 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>18. Building Winning Algorithmic Trading Systems</h4>
+                        <p class="author">By Kevin J. Davey (2014)</p>
+                        <p><strong>Why Essential:</strong> Written by a World Cup Trading Championship winner. Practical guide from someone who trades real money successfully. Covers the complete development process.</p>
+                        <p><strong>What You'll Learn:</strong> Strategy idea generation, development workflow, proper backtesting, walk-forward analysis, position sizing, money management, live trading preparation, dealing with drawdowns.</p>
+                        <p><strong>Key Topics:</strong> Strategy testing, optimization pitfalls, out-of-sample validation, Monte Carlo analysis, going live checklist</p>
+                        <p><strong>Pages:</strong> 280 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">Practical Guide</span>
+                        <span class="badge badge-advanced">Real Trader</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="19">
+                            book 19 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>19. Pairs Trading: Quantitative Methods and Analysis</h4>
+                        <p class="author">By Ganapathy Vidyamurthy (2004)</p>
+                        <p><strong>Why Essential:</strong> Comprehensive treatment of pairs trading. Mathematical rigor combined with practical implementation. Covers statistical arbitrage in depth.</p>
+                        <p><strong>What You'll Learn:</strong> Cointegration theory and testing, pairs selection methodology, spread modeling, entry and exit signals, risk management for pairs trading, Kalman filtering for dynamic hedging.</p>
+                        <p><strong>Key Topics:</strong> Ornstein-Uhlenbeck process, Johansen test, Dickey-Fuller test, mean reversion trading, market-neutral strategies</p>
+                        <p><strong>Pages:</strong> 221 | <strong>Best For:</strong> Advanced | <strong>Difficulty:</strong> ⭐⭐⭐⭐</p>
+                        <span class="badge badge-advanced">Statistical Arbitrage</span>
+                        <span class="badge badge-expert">Mathematical</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-checkbox">
+                        <label>
+                            <input type="checkbox" onchange="updateProgress()" data-book="20">
+                            book 20 completed
+                        </label>
+                    </div>
+                    <div class="book-cover">📖</div>
+                    <div class="book-info">
+                        <h4>20. Automated Trading with R: Quantitative Research and Platform Development</h4>
+                        <p class="author">By Chris Conlan (2016)</p>
+                        <p><strong>Why Essential:</strong> Complete guide to using R for algorithmic trading. Covers the full workflow from data acquisition to live trading. For those who prefer R over Python.</p>
+                        <p><strong>What You'll Learn:</strong> R programming for finance, Quantmod and TTR packages, building backtesting frameworks in R, statistical analysis, machine learning in R for trading, API integration, automated execution.</p>
+                        <p><strong>Key Topics:</strong> Time series in R, performance analytics, portfolio optimization, Interactive Brokers R API, risk management</p>
+                        <p><strong>Pages:</strong> 384 | <strong>Best For:</strong> Intermediate | <strong>Difficulty:</strong> ⭐⭐⭐</p>
+                        <span class="badge badge-intermediate">R Programming</span>
+                        <span class="badge badge-advanced">Complete Workflow</span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!-- Resources Section -->
+            <section id="resources" class="section">
+                <h2> Essential Online Resources</h2>
+                <p>Curated list of the best online resources for learning and staying updated in algorithmic trading.</p>
+                
+                <h3>Educational Websites</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>QuantStart</h4>
+                        <p><strong>Focus:</strong> Comprehensive tutorials on quantitative trading, C++ and Python for finance, and strategy development.</p>
+                        <p><strong>Best For:</strong> Detailed technical articles, beginner to advanced content, career guidance</p>
+                        <p><strong>URL:</strong> quantstart.com</p>
+                        <span class="badge badge-beginner">Free Articles</span>
+                        <span class="badge badge-intermediate">Tutorials</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>QuantInsti Blog</h4>
+                        <p><strong>Focus:</strong> Educational content from EPAT program. Covers algo trading, Python tutorials, and market analysis.</p>
+                        <p><strong>Best For:</strong> Strategy explanations, Python code examples, webinars</p>
+                        <p><strong>URL:</strong> blog.quantinsti.com</p>
+                        <span class="badge badge-beginner">Educational</span>
+                        <span class="badge badge-intermediate">Case Studies</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Quantopian Community (Archive)</h4>
+                        <p><strong>Focus:</strong> Though platform closed, the forums and lecture series remain valuable educational resources.</p>
+                        <p><strong>Best For:</strong> Advanced lectures, community discussions, strategy ideas</p>
+                        <p><strong>URL:</strong> Available through Internet Archive</p>
+                        <span class="badge badge-intermediate">Community</span>
+                        <span class="badge badge-advanced">Lectures</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>QuantConnect Documentation</h4>
+                        <p><strong>Focus:</strong> Extensive documentation for the LEAN algorithm framework. Great learning resource even if not using platform.</p>
+                        <p><strong>Best For:</strong> Algorithm examples, API documentation, multi-asset strategies</p>
+                        <p><strong>URL:</strong> quantconnect.com/docs</p>
+                        <span class="badge badge-intermediate">Documentation</span>
+                        <span class="badge badge-advanced">Code Examples</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>QuantPedia</h4>
+                        <p><strong>Focus:</strong> Encyclopedia of trading strategies based on academic research. 500+ strategies documented.</p>
+                        <p><strong>Best For:</strong> Strategy research, academic papers, backtested results</p>
+                        <p><strong>URL:</strong> quantpedia.com</p>
+                        <span class="badge badge-intermediate">Strategy Database</span>
+                        <span class="badge badge-advanced">Research</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Alpha Architect</h4>
+                        <p><strong>Focus:</strong> Quantitative investment research. Academic papers explained for practitioners.</p>
+                        <p><strong>Best For:</strong> Factor investing, research summaries, practical insights</p>
+                        <p><strong>URL:</strong> alphaarchitect.com</p>
+                        <span class="badge badge-intermediate">Research</span>
+                        <span class="badge badge-advanced">Factor Investing</span>
+                    </div>
+                </div>
+
+                <h3>💬 Communities & Forums</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Quantitative Finance Stack Exchange</h4>
+                        <p><strong>Focus:</strong> Q&A community for quant finance. Get expert answers to specific technical questions.</p>
+                        <p><strong>Best For:</strong> Specific problem solving, mathematical questions, code debugging</p>
+                        <p><strong>URL:</strong> quant.stackexchange.com</p>
+                        <span class="badge badge-intermediate">Q&A</span>
+                        <span class="badge badge-advanced">Expert Help</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Reddit r/algotrading</h4>
+                        <p><strong>Focus:</strong> Active community of algo traders sharing strategies, code, and experiences. Great for networking.</p>
+                        <p><strong>Best For:</strong> Daily discussions, strategy ideas, tool recommendations, beginner questions</p>
+                        <p><strong>URL:</strong> reddit.com/r/algotrading</p>
+                        <span class="badge badge-beginner">Community</span>
+                        <span class="badge badge-intermediate">Discussion</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Elite Trader Forums</h4>
+                        <p><strong>Focus:</strong> Long-running trading forum with automated trading section. Mix of retail and professional traders.</p>
+                        <p><strong>Best For:</strong> Strategy discussions, platform comparisons, market insights</p>
+                        <p><strong>URL:</strong> elitetrader.com</p>
+                        <span class="badge badge-intermediate">Forum</span>
+                        <span class="badge badge-advanced">Experienced Traders</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>NuclearPhynance</h4>
+                        <p><strong>Focus:</strong> Quantitative finance forum. Technical discussions on pricing, risk, and trading.</p>
+                        <p><strong>Best For:</strong> Advanced mathematical discussions, derivatives, risk management</p>
+                        <p><strong>URL:</strong> nuclearphynance.com</p>
+                        <span class="badge badge-advanced">Technical</span>
+                        <span class="badge badge-expert">Mathematical</span>
+                    </div>
+                </div>
+
+                <h3>📺 YouTube Channels</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Part Time Larry</h4>
+                        <p><strong>Focus:</strong> Practical algo trading tutorials. Python code walkthroughs, broker APIs, strategy implementation.</p>
+                        <p><strong>Best For:</strong> Beginners, practical coding, getting started quickly</p>
+                        <span class="badge badge-beginner">Beginner Friendly</span>
+                        <span class="badge badge-intermediate">Code Tutorials</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Sentdex (Harrison Kinsley)</h4>
+                        <p><strong>Focus:</strong> Python for finance and trading. Machine learning applications. Deep technical content.</p>
+                        <p><strong>Best For:</strong> Python tutorials, ML for trading, data analysis</p>
+                        <span class="badge badge-intermediate">Python</span>
+                        <span class="badge badge-advanced">ML</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>AlgoTrading101</h4>
+                        <p><strong>Focus:</strong> Educational content on algorithmic trading strategies and implementation.</p>
+                        <p><strong>Best For:</strong> Strategy explanations, platform tutorials</p>
+                        <span class="badge badge-beginner">Educational</span>
+                        <span class="badge badge-intermediate">Strategies</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>The Trading Geek</h4>
+                        <p><strong>Focus:</strong> Python for trading, API integration, building trading systems.</p>
+                        <p><strong>Best For:</strong> Technical implementation, real-world projects</p>
+                        <span class="badge badge-intermediate">Technical</span>
+                        <span class="badge badge-advanced">Projects</span>
+                    </div>
+                </div>
+
+                <h3>📰 News & Research</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>ArXiv Quantitative Finance</h4>
+                        <p><strong>Focus:</strong> Latest academic research papers on quantitative finance and algorithmic trading.</p>
+                        <p><strong>Best For:</strong> Cutting-edge research, new methodologies, academic insights</p>
+                        <p><strong>URL:</strong> arxiv.org/list/q-fin/recent</p>
+                        <span class="badge badge-advanced">Research</span>
+                        <span class="badge badge-expert">Academic</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>SSRN - Finance Research</h4>
+                        <p><strong>Focus:</strong> Social Science Research Network. Finance and economics research papers.</p>
+                        <p><strong>Best For:</strong> Academic papers, working papers, research</p>
+                        <p><strong>URL:</strong> ssrn.com</p>
+                        <span class="badge badge-advanced">Academic</span>
+                        <span class="badge badge-expert">Research Papers</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Risk.net</h4>
+                        <p><strong>Focus:</strong> Financial risk management news and analysis. Derivatives, regulation, technology.</p>
+                        <p><strong>Best For:</strong> Industry news, risk management, derivatives markets</p>
+                        <p><strong>URL:</strong> risk.net</p>
+                        <span class="badge badge-intermediate">News</span>
+                        <span class="badge badge-advanced">Professional</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>CFA Institute Research Foundation</h4>
+                        <p><strong>Focus:</strong> Investment research publications. Factor investing, portfolio management.</p>
+                        <p><strong>Best For:</strong> Free research monographs, professional insights</p>
+                        <p><strong>URL:</strong> cfainstitute.org/research</p>
+                        <span class="badge badge-intermediate">Research</span>
+                        <span class="badge badge-advanced">Professional</span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!-- Data Sources Section -->
+            <section id="datasets" class="section">
+                <h2>📊 Data Sources for Trading</h2>
+                <p>Comprehensive list of data sources ranging from free to professional-grade.</p>
+
+                <h3>🟢 Free Data Sources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Yahoo Finance (yfinance)</h4>
+                        <p><strong>Coverage:</strong> Stocks, ETFs, indices, forex, crypto. Historical and real-time data.</p>
+                        <p><strong>Access:</strong> Python library (yfinance). Easy to use, no API key required.</p>
+                        <p><strong>Best For:</strong> Getting started, backtesting, daily data</p>
+                        <p><strong>Limitations:</strong> Occasional data quality issues, limited intraday history</p>
+                        <span class="badge badge-beginner">Free</span>
+                        <span class="badge badge-intermediate">Easy Setup</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Alpha Vantage</h4>
+                        <p><strong>Coverage:</strong> Stocks, forex, crypto, technical indicators, fundamental data.</p>
+                        <p><strong>Access:</strong> REST API. Free tier: 5 requests/minute, 500 requests/day.</p>
+                        <p><strong>Best For:</strong> Small-scale projects, learning, testing</p>
+                        <p><strong>Limitations:</strong> Rate limits, delayed data on free tier</p>
+                        <span class="badge badge-beginner">Free Tier</span>
+                        <span class="badge badge-intermediate">API</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>IEX Cloud</h4>
+                        <p><strong>Coverage:</strong> US stocks, real-time and historical data, fundamental data.</p>
+                        <p><strong>Access:</strong> REST API. Free tier available with reasonable limits.</p>
+                        <p><strong>Best For:</strong> High-quality US stock data, clean API</p>
+                        <p><strong>Limitations:</strong> Free tier limited to 50K messages/month</p>
+                        <span class="badge badge-beginner">Free Tier</span>
+                        <span class="badge badge-intermediate">Quality Data</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Quandl (Nasdaq Data Link)</h4>
+                        <p><strong>Coverage:</strong> Extensive financial and economic data. Many free datasets available.</p>
+                        <p><strong>Access:</strong> REST API and Python library. Mix of free and paid data.</p>
+                        <p><strong>Best For:</strong> Economic data, alternative datasets, historical data</p>
+                        <p><strong>Limitations:</strong> Premium data requires subscription</p>
+                        <span class="badge badge-beginner">Free/Paid</span>
+                        <span class="badge badge-intermediate">Diverse Data</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>CoinGecko / CoinMarketCap</h4>
+                        <p><strong>Coverage:</strong> Cryptocurrency prices, market cap, volume, historical data.</p>
+                        <p><strong>Access:</strong> REST API. Free tier available with generous limits.</p>
+                        <p><strong>Best For:</strong> Crypto data, market overview, price tracking</p>
+                        <p><strong>Limitations:</strong> Rate limits on free tier</p>
+                        <span class="badge badge-beginner">Free</span>
+                        <span class="badge badge-intermediate">Crypto Focus</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>FRED (Federal Reserve Economic Data)</h4>
+                        <p><strong>Coverage:</strong> Economic indicators, interest rates, inflation, GDP, employment.</p>
+                        <p><strong>Access:</strong> REST API. Completely free with no limits.</p>
+                        <p><strong>Best For:</strong> Economic data, macro analysis, research</p>
+                        <p><strong>Limitations:</strong> No stock/crypto data</p>
+                        <span class="badge badge-beginner">Free</span>
+                        <span class="badge badge-intermediate">Economic Data</span>
+                    </div>
+                </div>
+
+                <!-- <h3> Affordable Paid Data Sources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Polygon.io</h4>
+                        <p><strong>Coverage:</strong> Stocks, options, forex, crypto. Real-time and historical. Tick-level data available.</p>
+                        <p><strong>Pricing:</strong> Starts at $29/month. Professional plans available.</p>
+                        <p><strong>Best For:</strong> Serious retail traders, high-quality data, good pricing</p>
+                        <span class="badge badge-intermediate">Affordable</span>
+                        <span class="badge badge-advanced">Quality</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>EOD Historical Data</h4>
+                        <p><strong>Coverage:</strong> 60+ exchanges, stocks, ETFs, forex, crypto, fundamentals.</p>
+                        <p><strong>Pricing:</strong> Starts at $19.99/month. Various plans available.</p>
+                        <p><strong>Best For:</strong> Global coverage, affordable pricing, good API</p>
+                        <span class="badge badge-intermediate">Affordable</span>
+                        <span class="badge badge-advanced">Global</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Tiingo</h4>
+                        <p><strong>Coverage:</strong> Stocks, ETFs, forex, crypto. News data. Real-time and historical.</p>
+                        <p><strong>Pricing:</strong> Free tier available. Paid plans from $10/month.</p>
+                        <p><strong>Best For:</strong> Clean data, good documentation, affordable</p>
+                        <span class="badge badge-beginner">Free Tier</span>
+                        <span class="badge badge-intermediate">Affordable</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Intrinio</h4>
+                        <p><strong>Coverage:</strong> Stocks, options, fundamentals, SEC filings.</p>
+                        <p><strong>Pricing:</strong> Various plans starting around $50/month.</p>
+                        <p><strong>Best For:</strong> Fundamental data, financial statements, SEC data</p>
+                        <span class="badge badge-intermediate">Professional</span>
+                        <span class="badge badge-advanced">Fundamentals</span>
+                    </div>
+                </div> -->
+
+                <h3> Professional/Institutional Data</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Bloomberg Terminal</h4>
+                        <p><strong>Coverage:</strong> Everything. Real-time data, news, analytics, research.</p>
+                        <p><strong>Pricing:</strong> ~$24,000/year. Industry standard for professionals.</p>
+                        <p><strong>Best For:</strong> Professional traders, institutional use, comprehensive data</p>
+                        <span class="badge badge-expert">Professional</span>
+                        <span class="badge badge-advanced">Comprehensive</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Refinitiv Eikon</h4>
+                        <p><strong>Coverage:</strong> Global markets, news, analytics, research.</p>
+                        <p><strong>Pricing:</strong> Similar to Bloomberg. Professional/institutional.</p>
+                        <p><strong>Best For:</strong> Professional traders, alternative to Bloomberg</p>
+                        <span class="badge badge-expert">Professional</span>
+                        <span class="badge badge-advanced">Institutional</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>FactSet</h4>
+                        <p><strong>Coverage:</strong> Financial data, analytics, portfolio management tools.</p>
+                        <p><strong>Pricing:</strong> Professional pricing. Various packages available.</p>
+                        <p><strong>Best For:</strong> Portfolio management, research, analytics</p>
+                        <span class="badge badge-expert">Professional</span>
+                        <span class="badge badge-advanced">Analytics</span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!-- Tools Section -->
+            <section id="tools" class="section">
+                <h2> Tools & Platforms</h2>
+                <p>Complete toolkit for building, testing, and deploying algorithmic trading systems.</p>
+                
+                <h3>🔧 Backtesting Frameworks</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Backtrader</h4>
+                        <p><strong>Language:</strong> Python</p>
+                        <p><strong>Type:</strong> Event-driven backtesting</p>
+                        <p><strong>Features:</strong> Multiple data feeds, broker emulation, extensive indicators library, position sizing, order types</p>
+                        <p><strong>Best For:</strong> Beginners to advanced, comprehensive features, active community</p>
+                        <p><strong>Installation:</strong> pip install backtrader</p>
+                        <span class="badge badge-beginner">Python</span>
+                        <span class="badge badge-intermediate">Open Source</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Zipline</h4>
+                        <p><strong>Language:</strong> Python</p>
+                        <p><strong>Type:</strong> Event-driven, used by Quantopian</p>
+                        <p><strong>Features:</strong> Pandas integration, realistic execution, performance analytics, risk analysis</p>
+                        <p><strong>Best For:</strong> Equities trading, professional-grade backtesting</p>
+                        <p><strong>Installation:</strong> pip install zipline-reloaded</p>
+                        <span class="badge badge-intermediate">Python</span>
+                        <span class="badge badge-advanced">Professional</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>VectorBT</h4>
+                        <p><strong>Language:</strong> Python</p>
+                        <p><strong>Type:</strong> Vectorized backtesting</p>
+                        <p><strong>Features:</strong> Ultra-fast execution, NumPy-based, portfolio optimization, parameter scanning</p>
+                        <p><strong>Best For:</strong> Fast strategy testing, parameter optimization, research</p>
+                        <p><strong>Installation:</strong> pip install vectorbt</p>
+                        <span class="badge badge-intermediate">Python</span>
+                        <span class="badge badge-advanced">Fast</span>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>QuantConnect LEAN</h4>
+                        <p><strong>Language:</strong> Python, C#</p>
+                        <p><strong>Type:</strong> Cloud platform with local engine</p>
+                        <p><strong>Features:</strong> Multi-asset support, live trading, institutional-grade, extensive data library</p>
+                        <p><strong>Best For:</strong> Multi-asset strategies, professional deployment</p>
+                        <span class="badge badge-intermediate">Python
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="2">
+                                    phase 2 completed
+                                </label>
+                            </div>
+                            <h3>Phase 2: Programming Fundamentals (3-4 months)</h3>
+                            <p><strong>Primary Language:</strong> Python - The industry standard</p>
+                            <div class="skills-grid">
+                                <div class="skill-item">🐍 Python Core (Variables, Functions, OOP)</div>
+                                <div class="skill-item">🔢 NumPy for Numerical Computing</div>
+                                <div class="skill-item">🐼 Pandas for Data Analysis</div>
+                                <div class="skill-item">📊 Data Visualization (Matplotlib, Seaborn)</div>
+                                <div class="skill-item">🌐 API Integration & Requests</div>
+                                <div class="skill-item">⏰ DateTime Operations</div>
+                                <div class="skill-item">📁 File I/O Operations</div>
+                                <div class="skill-item">❗ Error Handling</div>
+                            </div>
+                            <p><strong>Programming Skills Checklist:</strong></p>
+                            <ul>
+                                <li>Variables, data types, and operators</li>
+                                <li>Control structures (if/else, loops, while)</li>
+                                <li>Functions and lambda expressions</li>
+                                <li>Classes and Object-Oriented Programming</li>
+                                <li>List comprehensions and generators</li>
+                                <li>Working with CSV and JSON files</li>
+                                <li>Try/except error handling</li>
+                                <li>Virtual environments (venv, conda)</li>
+                                <li>NumPy arrays and operations</li>
+                                <li>Pandas DataFrames and Series</li>
+                                <li>Data cleaning and preprocessing</li>
+                                <li>API calls with requests library</li>
+                            </ul>
+                            <p><strong>Optional Secondary Languages:</strong></p>
+                            <ul>
+                                <li><strong>C++:</strong> For high-frequency trading (microsecond execution)</li>
+                                <li><strong>R:</strong> For statistical analysis and backtesting</li>
+                                <li><strong>JavaScript/TypeScript:</strong> For web dashboards</li>
+                                <li><strong>MQL5:</strong> For MetaTrader strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-3">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="3">
+                                    phase 3 completed
+                                </label>
+                            </div>
+                            <h3>Phase 3: Mathematics & Statistics (2-3 months)</h3>
+                            <p><strong>Goal:</strong> Build quantitative analysis skills</p>
+                            <div class="skills-grid">
+                                <div class="skill-item">📊 Probability & Statistics</div>
+                                <div class="skill-item">💵 Financial Mathematics</div>
+                                <div class="skill-item">⏱️ Time Series Analysis</div>
+                                <div class="skill-item">📈 Portfolio Theory</div>
+                                <div class="skill-item">📉 Regression Analysis</div>
+                                <div class="skill-item">🎲 Monte Carlo Simulation</div>
+                                <div class="skill-item">📐 Correlation & Covariance</div>
+                                <div class="skill-item">🎯 Hypothesis Testing</div>
+                            </div>
+                            <p><strong>Mathematical Concepts:</strong></p>
+                            <ul>
+                                <li>Mean, median, mode, standard deviation</li>
+                                <li>Normal and log-normal distributions</li>
+                                <li>Probability theory fundamentals</li>
+                                <li>Expected value and variance</li>
+                                <li>Correlation vs causation</li>
+                                <li>Linear and multiple regression</li>
+                                <li>T-tests and chi-square tests</li>
+                                <li>P-values and confidence intervals</li>
+                            </ul>
+                            <p><strong>Financial Math Topics:</strong></p>
+                            <ul>
+                                <li>Simple vs logarithmic returns</li>
+                                <li>Volatility calculation (realized, implied)</li>
+                                <li>Sharpe ratio, Sortino ratio, Calmar ratio</li>
+                                <li>Maximum drawdown and recovery time</li>
+                                <li>Value at Risk (VaR) and CVaR</li>
+                                <li>Beta and alpha calculations</li>
+                                <li>Modern Portfolio Theory (MPT)</li>
+                                <li>Capital Asset Pricing Model (CAPM)</li>
+                                <li>Black-Scholes option pricing</li>
+                            </ul>
+                            <p><strong>Time Series Techniques:</strong></p>
+                            <ul>
+                                <li>Stationarity and trend detection (ADF test)</li>
+                                <li>Autocorrelation and partial autocorrelation</li>
+                                <li>Moving averages and exponential smoothing</li>
+                                <li>ARIMA and SARIMA models</li>
+                                <li>Cointegration analysis</li>
+                                <li>GARCH models for volatility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-4">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="4">
+                                    phase 4 completed
+                                </label>
+                            </div>
+                            <h3>Phase 4: Trading Strategies (2-3 months)</h3>
+                            <p><strong>Goal:</strong> Master various trading approaches</p>
+                            <div class="skills-grid">
+                                <div class="skill-item">📈 Momentum & Trend Following</div>
+                                <div class="skill-item">🔄 Mean Reversion Strategies</div>
+                                <div class="skill-item">⚖️ Statistical Arbitrage</div>
+                                <div class="skill-item">💱 Market Making Strategies</div>
+                                <div class="skill-item">🎯 Breakout Trading</div>
+                                <div class="skill-item">👥 Pairs Trading</div>
+                                <div class="skill-item">📊 Volume-Based Strategies</div>
+                                <div class="skill-item">🌐 Cross-Asset Strategies</div>
+                            </div>
+                            <p><strong>Momentum Strategies:</strong></p>
+                            <ul>
+                                <li>Moving average crossovers (Golden Cross, Death Cross)</li>
+                                <li>Relative Strength strategies</li>
+                                <li>Breakout strategies (channel, triangle, range)</li>
+                                <li>Trend-following indicators (ADX, Parabolic SAR)</li>
+                                <li>Time-series momentum</li>
+                                <li>Cross-sectional momentum</li>
+                            </ul>
+                            <p><strong>Mean Reversion Strategies:</strong></p>
+                            <ul>
+                                <li>Bollinger Band mean reversion</li>
+                                <li>RSI overbought/oversold</li>
+                                <li>Pairs trading (cointegration-based)</li>
+                                <li>Statistical arbitrage</li>
+                                <li>Index arbitrage</li>
+                                <li>Market neutral strategies</li>
+                            </ul>
+                            <p><strong>Arbitrage Strategies:</strong></p>
+                            <ul>
+                                <li>Cross-exchange arbitrage</li>
+                                <li>Triangular arbitrage (forex/crypto)</li>
+                                <li>Index arbitrage (ETF vs components)</li>
+                                <li>Futures-cash arbitrage</li>
+                                <li>Options arbitrage (put-call parity)</li>
+                            </ul>
+                            <p><strong>Market Making:</strong></p>
+                            <ul>
+                                <li>Bid-ask spread capture</li>
+                                <li>Inventory management</li>
+                                <li>Order book dynamics</li>
+                                <li>Adverse selection risk</li>
+                                <li>Quote stuffing and cancellation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" id="phase-5">
+                        <div class="phase-card">
+                            <div class="phase-checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="updateProgress()" data-phase="5">
+                                    phase 5 completed
+                                </label>
+                            </div>
+                            <h3>Phase 5: Backtesting & Tools (1-2 months)</h3>
+                            <p><strong>Goal:</strong> Set up your trading infrastructure</p>
+                            <div class="skills-grid">
+                                <div class="skill-item">🔧 Backtrader Framework</div>
+                                <div class="skill-item">📦 Zipline Library</div>
+                                <div class="skill-item">⚡ VectorBT (Fast Backtesting)</div>
+                                <div class="skill-item">📊 Data Acquisition & Storage</div>
+                                <div class="skill-item">📈 Performance Metrics</div>
+                                <div class="skill-item">🌐 Broker API Integration</div>
+                                <div class="skill-item">🗄️ Database Management</div>
+                                <div class="skill-item">📝 Logging & Monitoring</div>
+                            </div>
+                            <p><strong>Backtesting Frameworks:</strong></p>
+                            <ul>
+                                <li><strong>Backtrader:</strong> Event-driven, Python, comprehensive features</li>
+                                <li><strong>Zipline:</strong> Quantopian's framework, Pandas integration</li>
+                                <li><strong>VectorBT:</strong> Vectorized backtesting, ultra-fast</li>
+                                <li><strong>PyAlgoTrade:</strong> Event-driven, good for beginners</li>
+                                <li><strong>QuantConnect LEAN:</strong> Multi-asset, cloud platform</li>
+                                <li><strong>Backtesting.py:</strong> Lightweight, easy to use</li>
+                            </ul>
+                            <p><strong>Data Sources:</strong></p>
+                            <ul>
+                                <li><strong>Free:</strong> Yahoo Finance (yfinance), Alpha Vantage, IEX Cloud</li>
+                                <li><strong>Paid:</strong> Polygon.io, EOD Historical Data, Quandl Premium</li>
+                                <li><strong>Crypto:</strong> CoinGecko, CoinMarketCap, exchange APIs</li>
+                                <li><strong>Professional:</strong> Bloomberg Terminal, Refinitiv Eikon</li>
+                            </ul>
+                            <p><strong>Performance Metrics:</strong></p>
+                            <ul>
+                                <li>Total return and annualized return</li>
+                                <li>Sharpe ratio and Sortino ratio</li>
+                                <li>Maximum drawdown and recovery time</li>
+                                <li>Win rate and profit factor</li>
+                                <li>Average win vs average loss</li>
+                                <li>Calmar ratio and information ratio</li>
+                                <li>Alpha and beta</li>
+                                <li>Value at Risk (VaR)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </header>
+        <script src="main.js"></script>
+    </body>
+</html>
